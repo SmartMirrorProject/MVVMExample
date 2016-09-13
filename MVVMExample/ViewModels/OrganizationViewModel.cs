@@ -9,7 +9,7 @@ using MVVMExample.Models;
 
 namespace MVVMExample.ViewModels
 {
-    class OrganizationViewModel : NotificationBase
+    public class OrganizationViewModel : NotificationBase
     {
         private readonly Organization _organization;
 

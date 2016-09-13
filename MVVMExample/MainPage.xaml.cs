@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using MVVMExample.ViewModels;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,6 +26,9 @@ namespace MVVMExample
         public MainPage()
         {
             this.InitializeComponent();
+            Organization = new OrganizationViewModel("Office");
         }
+
+        public OrganizationViewModel Organization { get; set; }
     }
 }
